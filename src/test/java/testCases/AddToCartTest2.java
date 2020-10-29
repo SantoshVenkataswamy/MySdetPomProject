@@ -28,7 +28,7 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.ShoppingCartPage;
 
-public class AddToCartTest extends BaseTest
+public class AddToCartTest2 extends BaseTest
 {
 
 	public String completeTestCaseName= this.getClass().getSimpleName();
@@ -93,19 +93,19 @@ public class AddToCartTest extends BaseTest
 		
 		addToCartPage.clickPlusButton();
 		waitForSeconds(2);
-		addToCartPage.clickPlusButton();
+		//addToCartPage.clickPlusButton();
 		
 		waitForSeconds(2);
-		addToCartPage.selectValueFromSizeDropdown("group_1","M");
+		addToCartPage.selectValueFromSizeDropdown("group_1","L");
 		
 		waitForSeconds(2);
-		addToCartPage.clickColourBox();
+		//addToCartPage.clickColourBox();
 		
 		waitForSeconds(2);
 		addToCartPage.clickAddToCart();
 		
 		test.log(Status.INFO, "Completed Test cases - "+"AddToCartTest" );
-		String cartMessage="There are 3 items in your cart.";
+		String cartMessage="There are 2 items in your cart.";
 		
 		
 		String confirmMessage=shoppingCartPage.getConfirmMessage();
@@ -116,10 +116,11 @@ public class AddToCartTest extends BaseTest
 	
 		Assert.assertTrue(itemsInTheCartMessage.equalsIgnoreCase(cartMessage), "Cart Message not Matching");
 		
+		
 	}
 
 	@AfterTest(groups = {"smoke","regression","Failed"})
-	public void quit(){		
+	public void quit(){
 		reports.flush();
 		waitForSeconds(2);
 		if(driver!=null);

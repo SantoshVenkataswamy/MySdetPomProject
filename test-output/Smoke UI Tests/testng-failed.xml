@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="TestNgListeners.TestListener"/>
   </listeners>
-  <test thread-count="5" name="Firefox Smoke OB Test Run(failed)" verbose="2">
+  <test thread-count="5" parallel="tests" name="Firefox Smoke OB Test Run(failed)" verbose="2">
     <parameter name="browserName" value="Chrome"/>
     <parameter name="IDCS" value="ON"/>
     <groups>
@@ -17,7 +17,6 @@
         <methods>
           <include name="createAndDeleteBoxes" invocation-numbers="0"/>
           <include name="quit"/>
-          <include name="setUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.AddToCartTest -->

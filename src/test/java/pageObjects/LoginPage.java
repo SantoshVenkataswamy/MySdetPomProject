@@ -1,11 +1,6 @@
 package pageObjects;
  
 
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.util.List;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +8,7 @@ import org.openqa.selenium.support.How;
 
 public class LoginPage extends BasePage
 {
-	public boolean display;
+	//public boolean display;
 	
 	public LoginPage(WebDriver driver) {
 		
@@ -36,9 +31,6 @@ public class LoginPage extends BasePage
 	@FindBy(how = How.ID, using = "SubmitLogin")
 	private WebElement signInButton;
 	
-	@FindBy(how = How.XPATH, using = "//form[@id='signonForm']/span[@class='error']")
-	private WebElement invalidLoginMessage;
-
 
 	
 	// -------------------User Edit Box----------------------------
@@ -163,17 +155,7 @@ public class LoginPage extends BasePage
 		}
 	}
 	
-	// -------------------Invalid Login Message----------------------------	
-	
-	public Boolean isInvalidLoginMessageVisible()
-	{
-		if (invalidLoginMessage.getText().contains("Invalid user/password"))
-		{			
-			return true;
-		}
-		return false;
-	}
-	
+
 	// -------------------Sign In----------------------------	
 	
 	
@@ -197,23 +179,9 @@ public class LoginPage extends BasePage
 		
 		}
 
-		
-		
-		
+			
 		
 	}
-	//-----------------Validate Error message  in the login page---------------------//
-	
-		public boolean validateLoginErrorMesssage()
-		{
-			waitForSeconds(2);
-			WebElement errorMessage=driver.findElement(By.xpath("//span[@class='error']"));
-			if(errorMessage.isDisplayed())
-			{
-				return true;
-			}
-			else
-				return false;
-		}
+
 
 }

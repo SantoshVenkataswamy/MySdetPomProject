@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="TestNgListeners.TestListener" />
 	</listeners>
-	<test name="Firefox Smoke OB Test Run" >
+	<test name="Firefox Smoke OB Test Run"  parallel="tests">
 	<parameter name="browserName" value="Chrome" />
 	<parameter name="IDCS" value="ON" />
 		<groups>
@@ -13,9 +13,8 @@
 			</run>
 		</groups>
 		<classes>
-
 		<class name="testCases.AddToCartTest" />
-
+		<class name="testCases.AddToCartTest2" />
 		</classes>	
 	</test>   
 

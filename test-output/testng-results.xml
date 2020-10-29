@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-29T11:23:23Z" name="Smoke UI Tests" finished-at="2020-10-29T11:24:30Z" duration-ms="66763">
+  <suite started-at="2020-10-29T21:53:05Z" name="Smoke UI Tests" finished-at="2020-10-29T21:55:07Z" duration-ms="122149">
     <groups>
       <group name="regression">
-        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
       </group> <!-- regression -->
       <group name="Failed">
-        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
       </group> <!-- Failed -->
       <group name="smoke">
-        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2020-10-29T11:23:23Z" name="Firefox Smoke OB Test Run" finished-at="2020-10-29T11:24:30Z" duration-ms="66763">
-      <class name="testCases.AddToCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:23:23Z" name="setUp" finished-at="2020-10-29T11:23:23Z" duration-ms="15" status="PASS">
+    <test started-at="2020-10-29T21:53:05Z" name="Firefox Smoke OB Test Run" finished-at="2020-10-29T21:55:07Z" duration-ms="122149">
+      <class name="testCases.AddToCartTest2">
+        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" started-at="2020-10-29T21:54:22Z" name="createAndDeleteBoxes" finished-at="2020-10-29T21:55:02Z" duration-ms="40818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:23:23Z" name="setUp" finished-at="2020-10-29T11:23:43Z" duration-ms="20511" status="PASS">
+        </test-method> <!-- createAndDeleteBoxes -->
+      </class> <!-- testCases.AddToCartTest2 -->
+      <class name="testCases.AddToCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" started-at="2020-10-29T21:53:05Z" name="setUp" finished-at="2020-10-29T21:53:25Z" duration-ms="20245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,9 +48,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:23:43Z" name="createAndDeleteBoxes" finished-at="2020-10-29T11:24:27Z" duration-ms="43668" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" started-at="2020-10-29T21:53:25Z" name="setUp" finished-at="2020-10-29T21:53:44Z" duration-ms="18946" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[ON]]>
               </value>
@@ -46,8 +63,61 @@
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" started-at="2020-10-29T21:53:44Z" name="createAndDeleteBoxes" finished-at="2020-10-29T21:54:21Z" duration-ms="36739" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[unable to select dropdown item]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: unable to select dropdown item
+at org.testng.Assert.fail(Assert.java:96)
+at pageObjects.BasePage.selectDropdownItem(BasePage.java:136)
+at pageObjects.HomePage.selectValueFromSortByDropdown(HomePage.java:119)
+at testCases.AddToCartTest.createAndDeleteBoxes(AddToCartTest.java:83)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- createAndDeleteBoxes -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:24:27Z" name="quit" finished-at="2020-10-29T11:24:30Z" duration-ms="2543" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest@1613674b]" started-at="2020-10-29T21:55:02Z" name="quit" finished-at="2020-10-29T21:55:05Z" duration-ms="2658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" started-at="2020-10-29T21:55:05Z" name="quit" finished-at="2020-10-29T21:55:07Z" duration-ms="2023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
