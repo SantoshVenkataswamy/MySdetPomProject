@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke UI Tests" verbose="1">
+
+	<listeners>
+		<listener class-name="TestNgListeners.TestListener" />
+	</listeners>
+	
+	<test name="Firefox Smoke OB Test Run" parallel="false" >
+	<parameter name="browserName" value="Chrome" />
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.HomePageProximityUploadsLinkTest" />
+			<class name="testCases.LocationsPageTest" />
+			<class name="testCases.LocationTypesPageTests" />
+			<class name="testCases.LoginPageTests" />
+			<class name="testCases.OrderBrokerPreferencesPageTest" />
+			<class name="testCases.OrganizationNPreferencesLinksTest" />
+			<class name="testCases.OrganizationNPrefererenceDropDowMenuTest" />
+			<class name="testCases.OrganizationsPreferencesPageTests" />
+			<class name="testCases.ProbabilityRulesPageTest" />
+			<class name="testCases.ProbableQuantityRulesPageTests" />
+			<class name="testCases.ProductsPageTests" />
+			<class name="testCases.PurchaseOrderInquiryDropDownsTest" />
+			 <class name="testCases.ReasonCodesPageTest" />
+			<class name="testCases.ScheduleReportsPageTest" />
+			<class name="testCases.StoreAssociateUserProfilePageTest" />
+			<class name="testCases.SystemsPageTests" />
+			<class name="testCases.UserProfilesPageTests" />
+			<class name="testCases.VendorPageTest" />
+			<class name="testCases.VendorUserProfilesPageTests" />
+			<!-- 	<class name="testCases.WebServiceAuthorizationPageTest" />
+					<class name="testCases.TenantAdminPageTest" />  -->							
+		</classes>
+	</test>
+
+</suite>

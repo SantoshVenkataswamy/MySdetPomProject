@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke UI Suite" verbose="1" annotations="JDK">
+	<suite-files>
+		<!-- <suite-file path="Smoke_Tests.xml"></suite-file> -->
+		<suite-file path="Smoke_STC_Tests.xml"></suite-file> 
+	</suite-files>
+</suite> 

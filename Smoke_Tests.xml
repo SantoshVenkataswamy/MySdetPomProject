@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke UI Tests" verbose="2">
+
+	<listeners>
+		<listener class-name="TestNgListeners.TestListener" />
+	</listeners>
+	<test name="Firefox Smoke OB Test Run" >
+	<parameter name="browserName" value="Chrome" />
+	<parameter name="IDCS" value="ON" />
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+
+		<class name="testCases.AddToCartTest" />
+
+		</classes>	
+	</test>   
+
+</suite>

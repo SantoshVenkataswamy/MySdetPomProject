@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-29T11:23:23Z" name="Smoke UI Tests" finished-at="2020-10-29T11:24:30Z" duration-ms="66763">
+    <groups>
+      <group name="regression">
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+      </group> <!-- regression -->
+      <group name="Failed">
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+      </group> <!-- Failed -->
+      <group name="smoke">
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2020-10-29T11:23:23Z" name="Firefox Smoke OB Test Run" finished-at="2020-10-29T11:24:30Z" duration-ms="66763">
+      <class name="testCases.AddToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:23:23Z" name="setUp" finished-at="2020-10-29T11:23:23Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:23:23Z" name="setUp" finished-at="2020-10-29T11:23:43Z" duration-ms="20511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:23:43Z" name="createAndDeleteBoxes" finished-at="2020-10-29T11:24:27Z" duration-ms="43668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteBoxes -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest@1cbb87f3]" started-at="2020-10-29T11:24:27Z" name="quit" finished-at="2020-10-29T11:24:30Z" duration-ms="2543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testCases.AddToCartTest -->
+    </test> <!-- Firefox Smoke OB Test Run -->
+  </suite> <!-- Smoke UI Tests -->
+</testng-results>

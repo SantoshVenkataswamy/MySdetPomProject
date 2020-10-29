@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke UI Tests]" guice-stage="DEVELOPMENT" verbose="2">
+  <listeners>
+    <listener class-name="TestNgListeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Firefox Smoke OB Test Run(failed)" verbose="2">
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="IDCS" value="ON"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.AddToCartTest">
+        <methods>
+          <include name="createAndDeleteBoxes" invocation-numbers="0"/>
+          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.AddToCartTest -->
+    </classes>
+  </test> <!-- Firefox Smoke OB Test Run(failed) -->
+</suite> <!-- Failed suite [Smoke UI Tests] -->

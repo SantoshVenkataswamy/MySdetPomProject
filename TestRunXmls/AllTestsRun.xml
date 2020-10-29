@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Tests" verbose="1">
+
+	<test name="Home Page Tests" >
+		<classes>
+			<class name="testCases.BoxesPageTest" />
+			<class name="testCases.BrandsPageTests" />
+			<class name="testCases.CarriersPageTest" />
+			<class name="testCases.ChangePasswordPageTest" />
+			<class name="testCases.HomePageBrandsDropDowMenuTest" />
+			<class name="testCases.HomePageDropDownsTest" />
+			<class name="testCases.HomePageLinksTests" />
+			<class name="testCases.HomePageProximityUploadsDropDowTest" />
+			<class name="testCases.HomePageProximityUploadsLinkTest" />
+			<class name="testCases.LocationsPageTest" />
+			<class name="testCases.LocationTypesPageTests" />
+			<class name="testCases.LoginPageTests" />
+			<class name="testCases.OrderBrokerPreferencesPageTest" />
+			<class name="testCases.OrganizationNPreferencesLinksTest" />
+			<class name="testCases.OrganizationNPrefererenceDropDowMenuTest" />
+			<class name="testCases.OrganizationsPreferencesPageTests" />
+			<class name="testCases.ProbabilityRulesPageTest" />
+			<class name="testCases.ProbableQuantityRulesPageTests" />
+			<class name="testCases.ProductsPageTests" />
+			<class name="testCases.PurchaseOrderInquiryDropDownsTest" />
+			<class name="testCases.ReasonCodesPageTest" />
+			<class name="testCases.ScheduleReportsPageTest" />
+			<class name="testCases.StoreAssociateUserProfilePageTest" />
+			<class name="testCases.SystemsPageTests" />
+			<class name="testCases.UserProfilesPageTests" />
+			<class name="testCases.VendorPageTest" />
+			<class name="testCases.VendorUserProfilesPageTests" />
+		</classes>
+	</test>
+	
+</suite>
+

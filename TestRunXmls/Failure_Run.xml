@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Failed Tests" verbose="1"> -->
+<suite name="Failed Tests" parallel="false" thread-count="2" verbose="1">
+	
+	<listeners>
+		<listener class-name="TestNgListeners.TestListener" />
+	</listeners>
+	
+	<test name="Firefox Failed Test Run" parallel="false" >
+	<parameter name="browserName" value="Firefox" />
+		<groups>
+			<run>
+				<include name="Failed"/>
+			</run>
+		</groups>
+		<classes>
+	        
+		 	<class name="testCases.STC_ShipToStoreUnderReviewTest" />  
+
+		</classes>
+       
+	</test>
+	
+	
+	
+
+	
+</suite>

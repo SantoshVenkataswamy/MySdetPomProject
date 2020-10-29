@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke STC Tests" verbose="1">
+	<test name="Firefox Smoke STC Test Run" parallel="false" >
+	<parameter name="browserName" value="Firefox" />
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+		   	   <class name="testCases.STC_PickUpOrderMultipleLinesTest" />
+  	   <class name="testCases.STC_PickUpUnderReviewTest" />
+	   	<class name="testCases.STC_HomePageButtonTest" />
+	       	<class name="testCases.STC_DeliveryOrderUnderReviewTest" />   
+	        
+	     	<class name="testCases.STC_DeliveryOrderMultipleLinesTest" />   
+		 	
+		 	<class name="testCases.STC_ShipToStoreUnderReviewTest" />  
+		 	<class name="testCases.STC_CheckAuthorityTest" />
+ 
+		</classes>
+	</test>
+	
+	
+	<!--  <test name="Chrome Smoke STC Test Run" parallel="false" >
+	<parameter name="browserName" value="Chrome" />
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.STC_HomePageButtonTest" />        
+			<class name="testCases.STC_DeliveryOrderUnderReview" /> 
+							
+			</classes>
+	</test>-->
+</suite>

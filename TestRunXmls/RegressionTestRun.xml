@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Tests" verbose="1">
+	<test name="Regression Test Run">
+		<groups>
+			<run>
+				<include name="regression"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.HomePageBrandsDropDowMenuTest" />
+			<class name="testCases.HomePageDropDownsTest" />
+			<class name="testCases.HomePageProximityUploadsDropDowTest" />
+			<class name="testCases.HomePageProximityUploadsLinkTest" />
+			<class name="testCases.OrganizationNPrefererenceDropDowMenuTest" />
+			<class name="testCases.PurchaseOrderInquiryDropDownsTest" />
+			<class name="testCases.HomePageLinksTests" />
+			<class name="testCases.HomePageProximityUploadsLinkTest" />
+			<class name="testCases.OrganizationNPreferencesLinksTest" />
+		</classes>
+	</test>
+</suite>
