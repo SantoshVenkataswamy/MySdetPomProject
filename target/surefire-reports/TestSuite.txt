@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 128.55 sec <<< FAILURE! - in TestSuite
+createAndDeleteBoxes(testCases.AddToCartTest)  Time elapsed: 37.332 sec  <<< FAILURE!
+java.lang.AssertionError: unable to select dropdown item
+	at testCases.AddToCartTest.createAndDeleteBoxes(AddToCartTest.java:83)
+
