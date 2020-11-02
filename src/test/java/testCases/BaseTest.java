@@ -63,18 +63,7 @@ public class BaseTest
 	}
 	
 	
-	public void waitForElementToLoadPage()
-	{
 
-		WebDriverWait wait = new WebDriverWait(driver, 120);
-		 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("(//div[@class='windowBackground' and contains(@eventproxy,'isc_LocateWait')])[last()]")));
-	}
-	public void waitForElementToLoadPage(int number)
-	{
-
-		WebDriverWait wait = new WebDriverWait(driver, 60);
-		 wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("(//div[@class='windowBackground'])["+number+"]")));
-	}
 	protected void waitForSeconds(double d)
 	{
 		try {

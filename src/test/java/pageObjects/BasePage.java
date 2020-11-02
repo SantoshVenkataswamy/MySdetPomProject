@@ -19,11 +19,17 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import Factories.ReporterFactory;
 
 public class BasePage 
 {	
 	public static WebDriver driver;
+	
+	
 	
 	public BasePage(WebDriver driver)
 	{
@@ -133,7 +139,8 @@ public class BasePage
 				//select.selectByValue(text);
 			}catch(Exception e){
 				e.printStackTrace();
-				Assert.fail("unable to select dropdown item");
+				Assert.fail("unable to select dropdown item "+text);
+				//test.log(Status.FAIL, "unable to select dropdown item - "+text+" ErrorMessage: "+ e.toString());
 			}
 		}
 

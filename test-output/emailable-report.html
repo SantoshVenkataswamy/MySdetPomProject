@@ -9,15 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Smoke UI Tests</th></tr>
-<tr><td><a href="#t0">Firefox Smoke OB Test Run</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">122,149</td><td>smoke</td><td></td></tr>
+<tr><td><a href="#t0">Firefox Smoke OB Test Run</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">109,713</td><td>smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke UI Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Firefox Smoke OB Test Run &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.AddToCartTest</td><td><a href="#m0">createAndDeleteBoxes</a></td><td rowspan="1">1604008424636</td><td rowspan="1">36739</td></tr><tr><th colspan="4">Firefox Smoke OB Test Run &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.AddToCartTest2</td><td><a href="#m1">createAndDeleteBoxes</a></td><td rowspan="1">1604008462078</td><td rowspan="1">40818</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke UI Tests</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Firefox Smoke OB Test Run &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.AddToCartTest2</td><td><a href="#m0">createAndDeleteBoxes</a></td><td rowspan="1">1604296503091</td><td rowspan="1">44731</td></tr><tr><th colspan="4">Firefox Smoke OB Test Run &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.AddToCartTest</td><td><a href="#m1">createAndDeleteBoxes</a></td><td rowspan="1">1604296548239</td><td rowspan="1">7262</td></tr></tbody>
 </table>
-<h2>Firefox Smoke OB Test Run</h2><h3 id="m0">testCases.AddToCartTest#createAndDeleteBoxes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ON</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: unable to select dropdown item
+<h2>Firefox Smoke OB Test Run</h2><h3 id="m0">testCases.AddToCartTest2#createAndDeleteBoxes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ON</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart Message not Matching expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
-	at pageObjects.BasePage.selectDropdownItem(BasePage.java:136)
-	at pageObjects.HomePage.selectValueFromSortByDropdown(HomePage.java:119)
-	at testCases.AddToCartTest.createAndDeleteBoxes(AddToCartTest.java:83)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at testCases.AddToCartTest2.createAndDeleteBoxes(AddToCartTest2.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,6 +44,6 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.AddToCartTest2#createAndDeleteBoxes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ON</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.AddToCartTest#createAndDeleteBoxes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ON</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -13,13 +13,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.AddToCartTest">
+      <class name="testCases.AddToCartTest2">
         <methods>
           <include name="createAndDeleteBoxes" invocation-numbers="0"/>
-          <include name="quit"/>
           <include name="setUp"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- testCases.AddToCartTest -->
+      </class> <!-- testCases.AddToCartTest2 -->
     </classes>
   </test> <!-- Firefox Smoke OB Test Run(failed) -->
 </suite> <!-- Failed suite [Smoke UI Tests] -->

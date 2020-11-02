@@ -2,69 +2,24 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-29T21:53:05Z" name="Smoke UI Tests" finished-at="2020-10-29T21:55:07Z" duration-ms="122149">
+  <suite started-at="2020-11-02T05:54:10Z" name="Smoke UI Tests" finished-at="2020-11-02T05:56:00Z" duration-ms="109713">
     <groups>
       <group name="regression">
-        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
-        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1ba9117e]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@a3d8174]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
       </group> <!-- regression -->
       <group name="Failed">
-        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
-        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1ba9117e]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@a3d8174]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
       </group> <!-- Failed -->
       <group name="smoke">
-        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
-        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
+        <method signature="AddToCartTest.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1ba9117e]" name="createAndDeleteBoxes" class="testCases.AddToCartTest"/>
+        <method signature="AddToCartTest2.createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@a3d8174]" name="createAndDeleteBoxes" class="testCases.AddToCartTest2"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2020-10-29T21:53:05Z" name="Firefox Smoke OB Test Run" finished-at="2020-10-29T21:55:07Z" duration-ms="122149">
+    <test started-at="2020-11-02T05:54:10Z" name="Firefox Smoke OB Test Run" finished-at="2020-11-02T05:56:00Z" duration-ms="109713">
       <class name="testCases.AddToCartTest2">
-        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" started-at="2020-10-29T21:54:22Z" name="createAndDeleteBoxes" finished-at="2020-10-29T21:55:02Z" duration-ms="40818" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ON]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAndDeleteBoxes -->
-      </class> <!-- testCases.AddToCartTest2 -->
-      <class name="testCases.AddToCartTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" started-at="2020-10-29T21:53:05Z" name="setUp" finished-at="2020-10-29T21:53:25Z" duration-ms="20245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ON]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" started-at="2020-10-29T21:53:25Z" name="setUp" finished-at="2020-10-29T21:53:44Z" duration-ms="18946" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ON]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1613674b]" started-at="2020-10-29T21:53:44Z" name="createAndDeleteBoxes" finished-at="2020-10-29T21:54:21Z" duration-ms="36739" status="FAIL">
+        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest2@a3d8174]" started-at="2020-11-02T05:55:03Z" name="createAndDeleteBoxes" finished-at="2020-11-02T05:55:47Z" duration-ms="44731" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -74,14 +29,14 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[unable to select dropdown item]]>
+              <![CDATA[Cart Message not Matching expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: unable to select dropdown item
+              <![CDATA[java.lang.AssertionError: Cart Message not Matching expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
-at pageObjects.BasePage.selectDropdownItem(BasePage.java:136)
-at pageObjects.HomePage.selectValueFromSortByDropdown(HomePage.java:119)
-at testCases.AddToCartTest.createAndDeleteBoxes(AddToCartTest.java:83)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at testCases.AddToCartTest2.createAndDeleteBoxes(AddToCartTest2.java:117)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,11 +68,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAndDeleteBoxes -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest@1613674b]" started-at="2020-10-29T21:55:02Z" name="quit" finished-at="2020-10-29T21:55:05Z" duration-ms="2658" status="PASS">
+      </class> <!-- testCases.AddToCartTest2 -->
+      <class name="testCases.AddToCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest@1ba9117e]" started-at="2020-11-02T05:54:10Z" name="setUp" finished-at="2020-11-02T05:54:44Z" duration-ms="33572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:testCases.AddToCartTest2@a3d8174]" started-at="2020-11-02T05:54:44Z" name="setUp" finished-at="2020-11-02T05:55:03Z" duration-ms="18989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createAndDeleteBoxes(java.lang.String)[pri:0, instance:testCases.AddToCartTest@1ba9117e]" started-at="2020-11-02T05:55:48Z" name="createAndDeleteBoxes" finished-at="2020-11-02T05:55:55Z" duration-ms="7262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteBoxes -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest@1ba9117e]" started-at="2020-11-02T05:55:55Z" name="quit" finished-at="2020-11-02T05:55:58Z" duration-ms="2680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest2@27ff5d15]" started-at="2020-10-29T21:55:05Z" name="quit" finished-at="2020-10-29T21:55:07Z" duration-ms="2023" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:testCases.AddToCartTest2@a3d8174]" started-at="2020-11-02T05:55:58Z" name="quit" finished-at="2020-11-02T05:56:00Z" duration-ms="2038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

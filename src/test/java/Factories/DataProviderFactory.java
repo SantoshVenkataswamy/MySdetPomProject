@@ -48,28 +48,7 @@ public class DataProviderFactory
 		return testDataProvider;
 	}
 	
-	/*public static void dateFormat(){
-	String date;
-	Date d = new Date();
-	date=d.toString().replaceAll(" ", "_");
-	date=date.replaceAll(":", "_");
-	date=date.replaceAll("\\+", "_");
-	
-
-	System.out.println(date);
-			
-
-
-	//date=getDateTime().split(" ")[0];		
-	//date=date.replaceAll("/", "_") + "_" + release;		
-	Calendar cal = Calendar.getInstance();
-	DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
-	cal.add(Calendar.DATE, 0);
-	date=dateFormat.format(cal.getTime());
-	System.out.println(date);
-	
-	}*/
-	
+		
 	public static String getDateFormat(){
 		
 			

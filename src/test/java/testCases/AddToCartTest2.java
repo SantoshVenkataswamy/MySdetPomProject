@@ -32,9 +32,9 @@ public class AddToCartTest2 extends BaseTest
 {
 
 	public String completeTestCaseName= this.getClass().getSimpleName();
-	//public String testCaseName = "BoxesPageTest";
+	
 	String completeTestName = completeTestCaseName + "001";	
-	//WebDriver driver = BrowserFactory.getBrowser();
+	
 	BrowserFactory factory = new BrowserFactory();
 	LoginPage loginPage;
 	BasePage basePage;
@@ -67,7 +67,7 @@ public class AddToCartTest2 extends BaseTest
 	@Parameters({"IDCS"})
 	@Test(groups = {"smoke","regression","Failed"})
 	public void createAndDeleteBoxes(String IDCS) throws AWTException, IOException{
-		
+		try {
 		reports = ExtentManager.getReport(System.getProperty("user.dir")+"//Reports//");
 		test = reports.createTest(completeTestCaseName);
 		test.log(Status.INFO, "starting Test cases - "+completeTestCaseName );
@@ -81,7 +81,7 @@ public class AddToCartTest2 extends BaseTest
 		homePage.clickSearchIcon();
 		waitForSeconds(2);
 		homePage.selectValueFromSortByDropdown("selectProductSort","Product Name: Z to A");
-		test.addScreenCaptureFromBase64String("Drop down selected");
+		//test.addScreenCaptureFromBase64String("Drop down selected");
 		
 		waitForSeconds(2);
 		homePage.clickSelectFirstItem();
@@ -93,18 +93,18 @@ public class AddToCartTest2 extends BaseTest
 		
 		addToCartPage.clickPlusButton();
 		waitForSeconds(2);
-		//addToCartPage.clickPlusButton();
+		addToCartPage.clickPlusButton();
 		
 		waitForSeconds(2);
-		addToCartPage.selectValueFromSizeDropdown("group_1","L");
+		addToCartPage.selectValueFromSizeDropdown("group_1","M");
 		
 		waitForSeconds(2);
-		//addToCartPage.clickColourBox();
+		addToCartPage.clickColourBox();
 		
 		waitForSeconds(2);
 		addToCartPage.clickAddToCart();
 		
-		test.log(Status.INFO, "Completed Test cases - "+"AddToCartTest" );
+		
 		String cartMessage="There are 2 items in your cart.";
 		
 		
@@ -116,6 +116,12 @@ public class AddToCartTest2 extends BaseTest
 	
 		Assert.assertTrue(itemsInTheCartMessage.equalsIgnoreCase(cartMessage), "Cart Message not Matching");
 		
+		test.log(Status.INFO, "Completed Test cases - "+completeTestCaseName );
+		
+	}catch(Exception e) {
+		e.printStackTrace();
+		test.log(Status.FAIL, "Test cases Failed at Step - "+ e.toString());
+	}
 		
 	}
 

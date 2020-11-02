@@ -15,6 +15,9 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import Factories.BrowserFactory;
 import Factories.ReporterFactory;
 import pageObjects.BasePage;
@@ -26,6 +29,8 @@ import testCases.BaseTest;
 public class TestListener extends BaseTest implements ITestListener 
 {
 	WebDriver driver;
+	
+	
 	BasePage base = new BasePage(driver);
 	BrowserFactory factory = new BrowserFactory();
 	//BasePage bp = new BasePage(driver);

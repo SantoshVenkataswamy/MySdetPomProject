@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Smoke_UI_Tests">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_UI_Tests" title="testCases.AddToCartTest" class="method navigator-link" hash-for-method="createAndDeleteBoxes(ON)">createAndDeleteBoxes(ON)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_UI_Tests" title="testCases.AddToCartTest2" class="method navigator-link" hash-for-method="createAndDeleteBoxes(ON)">createAndDeleteBoxes(ON)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Smoke_UI_Tests -->
@@ -116,7 +116,7 @@
                     <div class="method-list-content passed suite-Smoke_UI_Tests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_UI_Tests" title="testCases.AddToCartTest2" class="method navigator-link" hash-for-method="createAndDeleteBoxes(ON)">createAndDeleteBoxes(ON)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_UI_Tests" title="testCases.AddToCartTest" class="method navigator-link" hash-for-method="createAndDeleteBoxes(ON)">createAndDeleteBoxes(ON)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke_UI_Tests -->
@@ -134,7 +134,7 @@
           <div class="suite-Smoke_UI_Tests-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.AddToCartTest</span>
+              <span class="class-name">testCases.AddToCartTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -143,11 +143,11 @@
                   </a> <!-- createAndDeleteBoxes(ON) -->
                   <span class="method-name">createAndDeleteBoxes</span>
                   <span class="parameters">(ON)</span>
-                  <div class="stack-trace">java.lang.AssertionError: unable to select dropdown item
+                  <div class="stack-trace">java.lang.AssertionError: Cart Message not Matching expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
-	at pageObjects.BasePage.selectDropdownItem(BasePage.java:136)
-	at pageObjects.HomePage.selectValueFromSortByDropdown(HomePage.java:119)
-	at testCases.AddToCartTest.createAndDeleteBoxes(AddToCartTest.java:83)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at testCases.AddToCartTest2.createAndDeleteBoxes(AddToCartTest2.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,7 +182,7 @@
           <div class="suite-Smoke_UI_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.AddToCartTest2</span>
+              <span class="class-name">testCases.AddToCartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -217,8 +217,8 @@
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.AddToCartTest&quot;/&gt;
       &lt;class name=&quot;testCases.AddToCartTest2&quot;/&gt;
+      &lt;class name=&quot;testCases.AddToCartTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Firefox Smoke OB Test Run --&gt;
 &lt;/suite&gt; &lt;!-- Smoke UI Tests --&gt;
@@ -286,16 +286,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createAndDeleteBoxes')
 data.setCell(0, 2, 'testCases.AddToCartTest2')
-data.setCell(0, 3, 40818);
+data.setCell(0, 3, 44731);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createAndDeleteBoxes')
 data.setCell(1, 2, 'testCases.AddToCartTest')
-data.setCell(1, 3, 36739);
+data.setCell(1, 3, 7262);
 window.suiteTableData['Smoke_UI_Tests']= { tableData: data, tableDiv: 'times-div-Smoke_UI_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Smoke_UI_Tests">
               </div> <!-- times-div-Smoke_UI_Tests -->
             </div> <!-- times-div -->
@@ -331,37 +331,31 @@ return data;
               <div class="chronological-class-name">testCases.AddToCartTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp(Chrome, ON)</span>
-                <span class="method-start">20245 ms</span>
+                <span class="method-start">33572 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createAndDeleteBoxes(ON)</span>
-                <span class="method-start">39200 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.AddToCartTest2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createAndDeleteBoxes(ON)</span>
-                <span class="method-start">76642 ms</span>
+                <span class="method-start">52572 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createAndDeleteBoxes(ON)</span>
+                <span class="method-start">97720 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">117463 ms</span>
+                <span class="method-start">104991 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.AddToCartTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">120121 ms</span>
+                <span class="method-start">107671 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

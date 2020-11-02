@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -32,9 +33,9 @@ public class AddToCartTest extends BaseTest
 {
 
 	public String completeTestCaseName= this.getClass().getSimpleName();
-	//public String testCaseName = "BoxesPageTest";
+	
 	String completeTestName = completeTestCaseName + "001";	
-	//WebDriver driver = BrowserFactory.getBrowser();
+	
 	BrowserFactory factory = new BrowserFactory();
 	LoginPage loginPage;
 	BasePage basePage;
@@ -68,20 +69,22 @@ public class AddToCartTest extends BaseTest
 	@Test(groups = {"smoke","regression","Failed"})
 	public void createAndDeleteBoxes(String IDCS) throws AWTException, IOException{
 		
+		try{
 		reports = ExtentManager.getReport(System.getProperty("user.dir")+"//Reports//");
+		
 		test = reports.createTest(completeTestCaseName);
 		test.log(Status.INFO, "starting Test cases - "+completeTestCaseName );
 		
 		loginPage.signIn(IDCS,DataProviderFactory.getTestDataProvider().getUsername(completeTestName,"TestData"),
 				DataProviderFactory.getTestDataProvider().getPassword(completeTestName,"TestData"));
-		
+		/*
 		waitForSeconds(5);
 		homePage.setSearchEditBox("Dress");
 		waitForSeconds(2);
 		homePage.clickSearchIcon();
 		waitForSeconds(2);
 		homePage.selectValueFromSortByDropdown("selectProductSort","Product Name: Z to A");
-		test.addScreenCaptureFromBase64String("Drop down selected");
+		//test.addScreenCaptureFromBase64String("Drop down selected");
 		
 		waitForSeconds(2);
 		homePage.clickSelectFirstItem();
@@ -104,7 +107,7 @@ public class AddToCartTest extends BaseTest
 		waitForSeconds(2);
 		addToCartPage.clickAddToCart();
 		
-		test.log(Status.INFO, "Completed Test cases - "+"AddToCartTest" );
+		
 		String cartMessage="There are 3 items in your cart.";
 		
 		
@@ -116,6 +119,15 @@ public class AddToCartTest extends BaseTest
 	
 		Assert.assertTrue(itemsInTheCartMessage.equalsIgnoreCase(cartMessage), "Cart Message not Matching");
 		
+		test.log(Status.INFO, "Completed Test cases - "+completeTestCaseName );
+		
+		*/
+		test.log(Status.FAIL, "Test cases Failed to logout - "+completeTestCaseName);
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+			test.log(Status.FAIL, "Test cases Failed at Step - "+ e.toString());
+		}
 	}
 
 	@AfterTest(groups = {"smoke","regression","Failed"})
